@@ -71,7 +71,11 @@
 		o.sidebar.activate();
 		o.flash.activate();
 		M.updateTextFields();
-		$('.dropdown-trigger').dropdown();
+		$('.dropdown-trigger').dropdown({
+			onCloseEnd: function () {
+				$(this.el).blur();
+			}
+		});
 		console.log('run');
 	};
 

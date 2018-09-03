@@ -31,3 +31,8 @@ gem 'materialize-sass', '~> 1.0.0.rc2'
 
 gem 'smarter_csv'
 gem 'parallel'
+
+gem 'simple_form', '~> 4.0', '>= 4.0.1'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem 'devise'
